@@ -1,0 +1,986 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: white;
+    font-family: "Roboto";
+    height: 200vh;
+}
+
+/* dark mode  */
+
+body.darkmode {
+    background-color: white;
+    color: black;
+}
+
+.search input[type="text"] {
+    background-color: #121212;
+    color: white;
+}
+
+body.darkmode .search input[type="text"] {
+    background-color: white;
+    color: black;
+}
+
+body.darkmode #darkmode {
+    background-color: #0f0f0f;
+    color: white;
+}
+
+body.darkmode #subscribe {
+    background-color: #0f0f0f;
+    color: white;
+}
+
+body.darkmode #subscribe:hover {
+    background-color: #272727;
+    color: white;
+    
+}
+
+/* Search Input */
+.search {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+}
+
+.search input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    background-color: #f5f5f5;
+    outline: none;
+    border-color: #1d1d1d;
+    background-color: #121212;
+    color: white;
+}
+
+.search input::placeholder {
+    color: #888;
+}
+
+.search input {
+    padding-left: 35px;
+}
+
+/* search icon */
+.material-symbols-outlined {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 360px;
+}
+
+/* Logo */
+.logo {
+    position: absolute;
+    top: 15px;
+    width: 100%;
+    max-width: 400px;
+    padding: 0px 0px 0px 40px;
+    margin: 0px 0px 0px 20px
+}
+
+/* Menu */
+#menu{
+    position: absolute;
+    top: 17px;
+    margin: 0px 0px 0px 20px;
+}
+
+#home{
+    position: absolute;
+    top: 75px;
+    margin: 0px 0px 0px 20px
+}
+
+#subscriptions{
+    position: absolute;
+    top: 157px;
+    margin: 0px 0px 0px 20px
+}
+
+#user{
+    position: absolute;
+    top: 239px;
+    margin: 0px 0px 0px 20px
+}
+
+/* rightside */
+
+#mic{
+    position: absolute;
+    top: 17px;
+    right: 700px;
+}
+
+#notifications{
+    position: absolute;
+    top: 17px;
+    right: 100px;
+}
+
+#plus{
+    position: absolute;
+    top: 17px;
+    right: 150px;
+}
+
+
+
+/* menu text */
+
+#menu-home {
+    position: absolute;
+    left: 15px;
+    top: 100px;
+    font-size: small;
+}
+
+
+
+#menu-sub {
+    position: absolute;
+    left: 20px;
+    top: 183px;
+    font-size: small;
+}
+
+#menu-you {
+    position: absolute;
+    left: 20px;
+    top: 265px;
+    font-size: small;
+}
+
+#profile {
+    border-radius: 50%;
+    width: 2%;
+    position: absolute;
+    top: 12px;
+    right: 30px;
+}
+
+/* videos */
+#video1{
+    position: absolute;
+    left: 90px;
+    top: 80px;
+    border-radius: 10px;
+}
+
+#video2{
+    position: absolute;
+    left: 650px;
+    top: 80px;
+    border-radius: 10px;
+}
+
+#video3{
+    position: absolute;
+    left: 1200px;
+    top: 80px;
+    border-radius: 10px;
+}
+
+#video4 {
+    position: absolute;
+    left: 90px;
+    top: 500px;
+    border-radius: 10px;
+}
+
+#video5 {
+    position: absolute;
+    left: 650px;
+    top: 500px;
+    border-radius: 10px;
+}
+
+#video6 {
+    position: absolute;
+    left: 1200px;
+    top: 500px;
+    border-radius: 10px;
+}
+
+#video7 {
+    position: absolute;
+    left: 90px;
+    top: 900px;
+    border-radius: 10px;
+}
+
+#video8 {
+    position: absolute;
+    left: 650px;
+    top: 900px;
+    border-radius: 10px;
+}
+
+#video9 {
+    position: absolute;
+    left: 1200px;
+    top: 900px;
+    border-radius: 10px;
+}
+/* banner */
+
+.banner, #banner {
+    border-radius: 20px;
+    width: 1270px;
+    height: 200px;
+    position: absolute;
+    left: 180px;
+    top: 30px;
+    text-align: center;
+}
+
+/* videos in channel page */
+
+#main-video {
+    position: absolute;
+    top: 550px;
+    right: 1100px;
+    border-radius: 10px;
+}
+
+
+.main_video_text{
+    position: absolute;
+    top: 560px;
+    left: 830px;
+}
+
+.main_vid_description{
+    position: absolute;
+    top: 600px;
+    left: 830px;
+}
+
+/* pfps in main page */
+
+.pfp, #pfp1{
+    border-radius: 80px;
+    position: absolute;
+    top: 146px;
+    left: 180px;
+}
+
+.pfptext{
+    font-size: 30px;
+    position: absolute;
+    top: 280px;
+    left: 530px;
+}
+
+/* video / home a tags in channels page */
+
+nav, ul, li, a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* sub btn */
+
+#subscribe {
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    width: 80px;
+    height: 35px;
+    position: absolute;
+    top: 425px;
+    left: 535px;
+}
+
+#subscribe:hover {
+    background-color: #d9d9d9;
+    cursor: pointer;
+}
+/* pfp title in channel page */
+
+.pfpstatistic{
+    position: absolute;
+    top: 335px;
+    left: 530px;
+}
+
+/* nav list in channel page */
+
+#nav-videos {
+    color: #aaaaaa;
+    position: absolute;
+    top: 490px;
+    left: 420px;
+}
+
+#nav-home {
+    color: #aaaaaa;    
+    position: absolute;
+    top: 490px;
+    left: 350px;
+}
+
+/* for you section in channel page */
+
+.for_you{
+    position: absolute;
+    top: 868px;
+    left: 350px;
+}
+
+/* videos in channel page ( home ) */
+
+#home_vid1{
+    position: absolute;
+    top: 930px;
+    left: 350px;
+    border-radius: 10px;
+}
+#home_vid1_text{
+    position: absolute;
+    top: 1170px;
+    left: 350px;
+    font-weight: bold;
+}
+
+#home_vid1_text2{
+    position: absolute;
+    top: 1200px;
+    left: 350px;
+}
+
+#home_vid2{
+    position: absolute;
+    top: 930px;
+    left: 800px;
+    border-radius: 10px;
+}
+
+#home_vid2_text{
+    position: absolute;
+    top: 1170px;
+    left: 800px;
+    font-weight: bold;
+}
+
+#home_vid2_text2{
+    position: absolute;
+    top: 1200px;
+    left: 800px;
+}
+
+#home_vid3{
+    position: absolute;
+    top: 930px;
+    left: 1250px;
+    border-radius: 10px;
+}
+
+#home_vid3_text{
+    position: absolute;
+    top: 1170px;
+    left: 1250px;
+    font-weight: bold;
+}
+
+#home_vid3_text2{
+    position: absolute;
+    top: 1200px;
+    left: 1250px;
+}
+
+#nav-home:hover {
+    color: #f1f1f1;
+    text-decoration: underline;
+}
+
+#nav-videos:hover {
+    color: #f1f1f1;
+    text-decoration: underline;
+}
+
+/* pfps in main page */
+
+#pfps1 {
+    border-radius: 50%;
+    width: 3%;
+    position: absolute;
+    top: 380px;
+    left: 100px;
+}
+
+#pfps2 {
+    border-radius: 50%;
+    width: 3%;
+    position: absolute;
+    top: 380px;
+    left: 650px;
+}
+
+#pfps3 {
+    border-radius: 50%;
+    width: 3%;
+    position: absolute;
+    top: 380px;
+    left: 1220px;
+}
+
+#pfps4 {
+    border-radius: 50%;
+    width: 3%;
+    position: absolute;
+    top: 800px;
+    left: 1220px;
+}
+
+#pfps5 {
+    border-radius: 50%;
+    width: 3%;
+    position: absolute;
+    top: 800px;
+    left: 650px;
+}
+
+#pfps6 {
+    border-radius: 50%;
+    width: 3%;
+    position: absolute;
+    top: 800px;
+    left: 100px;
+}
+
+#pfps7 {
+    border-radius: 50%;
+    width: 3%;
+    position: absolute;
+    top: 1200px;
+    left: 100px;
+}
+
+#pfps8 {
+    border-radius: 50%;
+    width: 3%;
+    position: absolute;
+    top: 1200px;
+    left: 650px;
+}
+
+#pfps9 {
+    border-radius: 50%;
+    width: 3%;
+    position: absolute;
+    top: 1200px;
+    left: 1220px;
+}
+
+/* main page videos txts */
+
+#vid1_text{
+    position: absolute;
+    top: 380px;
+    left: 170px;
+    font-weight: bold;
+}
+
+#vid1_text2{
+    position: absolute;
+    top: 405px;
+    left: 170px;
+}
+
+#vid2_text{
+    position: absolute;
+    top: 380px;
+    left: 720px;
+    font-weight: bold;
+}
+
+#vid2_text2{
+    position: absolute;
+    top: 405px;
+    left: 720px;
+}
+
+#vid3_text{
+    position: absolute;
+    top: 380px;
+    left: 1290px;
+    font-weight: bold;
+}
+
+#vid3_text2{
+    position: absolute;
+    top: 405px;
+    left: 1290px;
+    border-radius: 10px;
+}
+
+#vid4_text{
+    position: absolute;
+    top: 800px;
+    left: 170px;
+    font-weight: bold
+}
+
+#vid4_text2{
+    position: absolute;
+    top: 825px;
+    left: 170px;
+}
+
+#vid5_text{
+    position: absolute;
+    top: 800px;
+    left: 720px;
+    font-weight: bold
+}
+
+#vid5_text2{
+    position: absolute;
+    top: 825px;
+    left: 720px;
+}
+
+#vid6_text{
+    position: absolute;
+    top: 800px;
+    left: 1290px;
+    font-weight: bold
+}
+
+#vid6_text2{
+    position: absolute;
+    top: 845px;
+    left: 1290px;
+}
+
+#vid7_text{
+    position: absolute;
+    top: 1200px;
+    left: 170px;
+    font-weight: bold
+}
+
+#vid7_text2{
+    position: absolute;
+    top: 1225px;
+    left: 170px;
+}
+
+#vid8_text{
+    position: absolute;
+    top: 1200px;
+    left: 720px;
+    font-weight: bold
+}
+
+#vid8_text2{
+    position: absolute;
+    top: 1225px;
+    left: 720px;
+}
+
+#vid9_text{
+    position: absolute;
+    top: 1200px;
+    left: 1290px;
+    font-weight: bold
+}
+
+#vid9_text2{
+    position: absolute;
+    top: 1225px;
+    left: 1290px;
+}
+
+#video1_video{
+    position: absolute;
+    top: 590px;
+    left: 350px;
+    border-radius: 10px;
+}
+
+#video2_video{
+    position: absolute;
+    top: 590px;
+    left: 750Px;
+    border-radius: 10px;
+}
+
+#video3_video{
+    position: absolute;
+    top: 590px;
+    left: 1145px;
+    border-radius: 10px;
+}
+
+#video4_video{
+    position: absolute;
+    top: 890px;
+    left: 340px;
+    border-radius: 10px;
+}
+
+#video5_video{
+    position: absolute;
+    top:879px;
+    left:750px;
+    border-radius: 10px;
+}
+
+#video6_video{
+    position: absolute;
+    top: 890px;
+    left: 1145px;
+    border-radius: 10px;
+}
+
+#video7_video{
+    position: absolute;
+    top:1200px;
+    left:340px;
+    border-radius: 10px;
+}
+
+#video8_video{
+    position: absolute;
+    top:1200px;
+    left:750px;
+    border-radius: 10px;
+}
+
+#video9_video{
+    position: absolute;
+    top:1200px;
+    left:1145px;
+    border-radius: 10px;
+}
+
+#text1_text{
+    position: absolute;
+    top: 805px;
+    left: 350px;
+}
+
+#text2_text{
+    position: absolute;
+    top: 805px;
+    left: 750px;
+}
+
+#text3_text{
+    position: absolute;
+    top:805px;
+    left:1145px;
+}
+
+#text4_text{
+position: absolute;
+top: 1105px;
+left:350px;
+}
+
+#text5_text{
+    position: absolute;
+    top:1105px;
+    left:750px;
+}
+
+#text6_text{
+    position: absolute;
+    top:1105px;
+    left:1145px;
+}
+
+
+
+#text7_text{
+    position: absolute;
+    top:1420px;
+    left:750px;
+}
+
+
+
+#text8_text{
+    position: absolute;
+    top:1420px;
+    left:350px;
+}
+
+
+
+#text9_text{
+    position: absolute;
+    top:1420px;
+    left:1145px;
+}
+
+.p1{
+    font-size: x-small;
+    position: absolute;
+    top:848px;
+    left:350px;
+}
+
+.p2{
+    position: absolute;
+    font-size: x-small;
+    top:840px;
+    left: 750px;
+}
+
+.p3{
+    position: absolute;
+    font-size: x-small;
+    top: 1141px;
+    left:350px
+}
+
+.p4{
+    position: absolute;
+    font-size: x-small;
+    top: 1141px;
+    left: 1145px;
+}
+
+.p5{
+    position: absolute;
+    font-size: x-small;
+    top:1148px;
+    left: 750px;
+}
+
+.p6{
+    position: absolute;
+    font-size: x-small;
+    top: 848px;
+    left: 1145px;
+}
+
+.p7{
+    position: absolute;
+    font-size: x-small;
+    top: 1465px;
+    left: 750px;
+}
+
+.p8{
+    position: absolute;
+    font-size: x-small;
+    top: 1465px;
+    left: 350px;
+}
+
+
+.p9{
+    position: absolute;
+    font-size: x-small;
+    top: 1465px;
+    left: 1145px;
+}
+
+/* Drak Mode */
+
+#darkmode {
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    width: 120px;
+    height: 35px;
+    position: absolute;
+    top: 15px;
+    left: 1550px;
+    cursor: pointer;
+}
+
+/* index page videos */
+
+
+
+/* lines */
+
+.line1 {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    border: none;
+    margin: 20px 0;
+    display: flex;
+    position: absolute;
+    top: 1260px;
+}
+
+/* home page videos ( category )  */
+#text_cate_vid{
+    position: absolute;
+    top: 1325px;
+    left: 350px;
+}
+
+#justhome_vid1{
+    position: absolute;
+    top: 1400px;
+    left: 350px;
+    border-radius: 10px;
+}
+
+#justhome_vid2{
+    position: absolute;
+    top: 1400px;
+    left: 570px;
+    border-radius: 10px;
+}
+
+#justhome_vid3{
+    position: absolute;
+    top: 1400px;
+    left: 790px;
+    border-radius: 10px;
+}
+
+#justhome_vid4{
+    position: absolute;
+    top: 1400px;
+    left: 1010px;
+    border-radius: 10px;
+}
+
+#justhome_vid5{
+    position: absolute;
+    top: 1400px;
+    left: 1230px;
+    border-radius: 10px;
+}
+
+#justhome_vid6{
+    position: absolute;
+    top: 1400px;
+    left: 1450px;
+    border-radius: 10px;
+}
+
+#cate_vid1_text{
+    position: absolute;
+    top: 1525px;
+    left: 350px;
+    font-size: small;
+}
+
+#cate_vid1_text2{
+    position: absolute;
+    top: 1565px;
+    left: 350px;
+    font-size: small;
+}
+
+#cate_vid2_text{
+    position: absolute;
+    top: 1525px;
+    left: 570px;
+    font-size: small;
+}
+
+#cate_vid2_text2{
+    position: absolute;
+    top: 1550px;
+    left: 570px;
+    font-size: small;
+}
+
+#cate_vid3_text{
+    position: absolute;
+    top: 1525px;
+    left: 790px;
+    font-size: small;
+}
+
+#cate_vid3_text2{
+    position: absolute;
+    top: 1565px;
+    left: 790px;
+    font-size: small;
+}
+
+#cate_vid4_text{
+    position: absolute;
+    top: 1525px;
+    left: 1010px;
+    font-size: small;
+}
+
+#cate_vid4_text2{
+    position: absolute;
+    top: 1550px;
+    left: 1010px;
+    font-size: small;
+}
+
+#cate_vid5_text{
+    position: absolute;
+    top: 1525px;
+    left: 1230px;
+    font-size: small;
+}
+
+#cate_vid5_text2{
+    position: absolute;
+    top: 1580px;
+    left: 1230px;
+    font-size: small;
+}
+
+#cate_vid6_text{
+    position: absolute;
+    top: 1525px;
+    left: 1450px;
+    font-size: small;
+}
+
+#cate_vid6_text2{
+    position: absolute;
+    top: 1565px;
+    left: 1450px;
+    font-size: small;
+}
+
+
+/* scroll bar */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+::-webkit-scrollbar-track {
+    background-color: #181818;
+    border-radius: 10px;
+}
+
+.container {
+    overflow: auto;
+    height: 100%;
+}
